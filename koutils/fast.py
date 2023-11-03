@@ -28,7 +28,7 @@ def lrp(x: list, y: list, title: str = None):
   r = clf.predict(x)
   m = clf.coef_
   b = clf.intercept_
-  fig, ax = plt.subplots(layout='constrained')
+  fig, ax = plt.subplots()
   ax.plot(x, y, label='Original')
   ax.scatter(x,y)
   ax.set_title(f"y = {m[0][0]:.3} * x + {b[0]:.3}", loc='right',fontsize=10)
